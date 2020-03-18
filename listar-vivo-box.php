@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!empty($_SESSION['id'])) {
-    //echo "OlÃ¡ " . $_SESSION['nome'] . ", Bem vindo <br>";
+    //echo "Olá " . $_SESSION['nome'] . ", Bem vindo <br>";
 } else {
     $_SESSION['msg'] = "Por favor, conecte-se!";
     header("Location: login.php");
@@ -180,7 +180,7 @@ $resultado_vivo = mysqli_query($conn, $result_vivo);
                                         </div>
                                         <div class="font-weight-bold">
                                             <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
-                                            <div class="small text-gray-500">Emily Fowler Â· 58m</div>
+                                            <div class="small text-gray-500">Emily Fowler ú· 58m</div>
                                         </div>
                                     </a>
                                     <a class="dropdown-item d-flex align-items-center" href="#">
@@ -190,7 +190,7 @@ $resultado_vivo = mysqli_query($conn, $result_vivo);
                                         </div>
                                         <div>
                                             <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
-                                            <div class="small text-gray-500">Jae Chun Â· 1d</div>
+                                            <div class="small text-gray-500">Jae Chun ú· 1d</div>
                                         </div>
                                     </a>
                                     <a class="dropdown-item d-flex align-items-center" href="#">
@@ -200,7 +200,7 @@ $resultado_vivo = mysqli_query($conn, $result_vivo);
                                         </div>
                                         <div>
                                             <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
-                                            <div class="small text-gray-500">Morgan Alvarez Â· 2d</div>
+                                            <div class="small text-gray-500">Morgan Alvarez ú· 2d</div>
                                         </div>
                                     </a>
                                     <a class="dropdown-item d-flex align-items-center" href="#">
@@ -210,7 +210,7 @@ $resultado_vivo = mysqli_query($conn, $result_vivo);
                                         </div>
                                         <div>
                                             <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
-                                            <div class="small text-gray-500">Chicken the Dog Â· 2w</div>
+                                            <div class="small text-gray-500">Chicken the Dog ú· 2w</div>
                                         </div>
                                     </a>
                                     <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
@@ -222,7 +222,7 @@ $resultado_vivo = mysqli_query($conn, $result_vivo);
                             <!-- Nav Item - User Information -->
                             <li class="nav-item dropdown no-arrow">
                                 <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo "OlÃ¡, " . $_SESSION['nome']; ?></span>
+                                    <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo "Olá, " . $_SESSION['nome']; ?></span>
                                     <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
                                 </a>
                                 <!-- Dropdown - User Information -->
@@ -233,7 +233,7 @@ $resultado_vivo = mysqli_query($conn, $result_vivo);
                                     </a>
                                     <a class="dropdown-item" href="#">
                                         <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                        ConfiguraÃ§Ãµes
+                                        Configurações
                                     </a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="include/logout.php" data-toggle="modal" data-target="#logoutModal">
@@ -265,38 +265,38 @@ $resultado_vivo = mysqli_query($conn, $result_vivo);
 
                         <div class="card shadow mb-4">
                             <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">InformaÃ§Ãµes</h6>
+                                <h6 class="m-0 font-weight-bold text-primary">Informações</h6>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
-                                    <table class="table table-bordered table-hover table-sm">
+                                    <table class="table table-bordered table-hover table-sm" id="vivo">
                                         <thead>
                                             <tr style="white-space: nowrap;">
                                                 <th scope="col">ID</th>
                                                 <th scope="col" class="text-center">Colaborador</th>
-                                                <th scope="col" class="text-center">MatrÃ­cula</th>
-                                                <th scope="col" class="text-center">CÃ³d. do Setor</th>
+                                                <th scope="col" class="text-center">Matrícula</th>
+                                                <th scope="col" class="text-center">Cód. do Setor</th>
                                                 <th scope="col" class="text-center">Setor</th>
-                                                <th scope="col" class="text-center">FunÃ§Ã£o</th>
+                                                <th scope="col" class="text-center">Função</th>
                                                 <th scope="col" class="text-center">Tipo de Equipamento</th> 
                                                 <th scope="col" class="text-center">Modelo</th>   
-                                                <th scope="col" class="text-center">NÂº de SÃ©rie</th>  
+                                                <th scope="col" class="text-center">Núº de Série</th>  
                                                 <th scope="col" class="text-center">Tipo de Defeito</th>
-                                                <th scope="col" class="text-center">SituaÃ§Ã£o do Aparelho</th>  
-                                                <th scope="col" class="text-center">NÂº da Linha</th>
+                                                <th scope="col" class="text-center">Situação do Aparelho</th>  
+                                                <th scope="col" class="text-center">Núº da Linha</th>
                                                 <th scope="col" class="text-center">IMEI Chip</th>
                                                 <th scope="col" class="text-center">Qtd. Dados</th>
                                                 <th scope="col" class="text-center">Qtd. Minutos</th>  
                                                 <th scope="col" class="text-center">Compartilhado</th>  
-                                                <th scope="col" class="text-center">SituaÃ§Ã£o da Linha</th>  
+                                                <th scope="col" class="text-center">Situação da Linha</th>  
                                                 <th scope="col" class="text-center">Valor Mensal</th> 
-                                                <th scope="col" class="text-center">EndereÃ§o</th>  
+                                                <th scope="col" class="text-center">Endereço</th>  
                                                 <th scope="col" class="text-center">Cidade</th>  
                                                 <th scope="col" class="text-center">CEP</th>  
                                                 <th scope="col" class="text-center">Estado</th> 
                                                 <th scope="col" class="text-center">Termo</th>  
-                                                <th scope="col" class="text-center">Data de CriaÃ§Ã£o</th>  
-                                                <th scope="col" class="text-center">AÃ§Ãµes</th>  
+                                                <th scope="col" class="text-center">Data de Criação</th>  
+                                                <th scope="col" class="text-center">Ações</th>  
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -340,7 +340,7 @@ $resultado_vivo = mysqli_query($conn, $result_vivo);
                                             <?php }
                                             ?>
                                         </tbody> 
-                                    </table>
+                                    </table><!--
                                     <nav aria-label="paginacao">
                                         <ul class="pagination pagination-sm justify-content-center">
                                             <li class="page-item disabled">
@@ -357,7 +357,7 @@ $resultado_vivo = mysqli_query($conn, $result_vivo);
                                                 <a class="page-link" href="#">Ãšltima</a>
                                             </li>
                                         </ul>
-                                    </nav>
+                                    </nav>-->
                                 </div>
                             </div>
                         </div>
@@ -435,6 +435,16 @@ $resultado_vivo = mysqli_query($conn, $result_vivo);
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet">
+    <script>
+        $(document).ready(function() {
+            $('#vivo').DataTable();
+        } );
+
+    </script>
 
 </body>
 
