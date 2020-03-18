@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!empty($_SESSION['id'])) {
-    //echo "Olá " . $_SESSION['nome'] . ", Bem vindo <br>";
+    //echo "OlÃ¡ " . $_SESSION['nome'] . ", Bem vindo <br>";
 } else {
     $_SESSION['msg'] = "Por favor, conecte-se!";
     header("Location: login.php");
@@ -180,7 +180,7 @@ $resultado_tel = mysqli_query($conn, $result_tel);
                                         </div>
                                         <div class="font-weight-bold">
                                             <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
-                                            <div class="small text-gray-500">Emily Fowler ú· 58m</div>
+                                            <div class="small text-gray-500">Emily Fowler ÃºÂ· 58m</div>
                                         </div>
                                     </a>
                                     <a class="dropdown-item d-flex align-items-center" href="#">
@@ -190,7 +190,7 @@ $resultado_tel = mysqli_query($conn, $result_tel);
                                         </div>
                                         <div>
                                             <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
-                                            <div class="small text-gray-500">Jae Chun ú· 1d</div>
+                                            <div class="small text-gray-500">Jae Chun ÃºÂ· 1d</div>
                                         </div>
                                     </a>
                                     <a class="dropdown-item d-flex align-items-center" href="#">
@@ -200,7 +200,7 @@ $resultado_tel = mysqli_query($conn, $result_tel);
                                         </div>
                                         <div>
                                             <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
-                                            <div class="small text-gray-500">Morgan Alvarez ú· 2d</div>
+                                            <div class="small text-gray-500">Morgan Alvarez ÃºÂ· 2d</div>
                                         </div>
                                     </a>
                                     <a class="dropdown-item d-flex align-items-center" href="#">
@@ -210,7 +210,7 @@ $resultado_tel = mysqli_query($conn, $result_tel);
                                         </div>
                                         <div>
                                             <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
-                                            <div class="small text-gray-500">Chicken the Dog ú· 2w</div>
+                                            <div class="small text-gray-500">Chicken the Dog ÃºÂ· 2w</div>
                                         </div>
                                     </a>
                                     <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
@@ -222,7 +222,7 @@ $resultado_tel = mysqli_query($conn, $result_tel);
                             <!-- Nav Item - User Information -->
                             <li class="nav-item dropdown no-arrow">
                                 <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo "Olá, " . $_SESSION['nome']; ?></span>
+                                    <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo "OlÃ¡, " . $_SESSION['nome']; ?></span>
                                     <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
                                 </a>
                                 <!-- Dropdown - User Information -->
@@ -233,7 +233,7 @@ $resultado_tel = mysqli_query($conn, $result_tel);
                                     </a>
                                     <a class="dropdown-item" href="#">
                                         <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                        Configurações
+                                        ConfiguraÃ§Ãµes
                                     </a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="include/logout.php" data-toggle="modal" data-target="#logoutModal">
@@ -264,7 +264,7 @@ $resultado_tel = mysqli_query($conn, $result_tel);
                         </div> 
                         <div class="card shadow mb-4">                            
                             <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">Informações</h6>
+                                <h6 class="m-0 font-weight-bold text-primary">InformaÃ§Ãµes</h6>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
@@ -273,30 +273,30 @@ $resultado_tel = mysqli_query($conn, $result_tel);
                                             <tr style="white-space: nowrap;">
                                                 <th scope="col" class="text-center">ID</th>
                                                 <th scope="col" class="text-center">Colaborador</th>
-                                                <th scope="col" class="text-center">Matrícula</th>
-                                                <th scope="col" class="text-center">Cód. do Setor</th>
+                                                <th scope="col" class="text-center">MatrÃ­cula</th>
+                                                <th scope="col" class="text-center">CÃ³d. do Setor</th>
                                                 <th scope="col" class="text-center">Setor</th>
-                                                <th scope="col" class="text-center">Função</th>
+                                                <th scope="col" class="text-center">FunÃ§Ã£o</th>
                                                 <th scope="col" class="text-center">IMEI Aparelho</th>                                    
                                                 <th scope="col" class="text-center">Aparelho</th>
                                                 <th scope="col" class="text-center">Modelo</th>   
-                                                <th scope="col" class="text-center">Núº de Série</th>  
+                                                <th scope="col" class="text-center">NÃºÂº de SÃ©rie</th>  
                                                 <th scope="col" class="text-center">Tipo de Defeito</th>
-                                                <th scope="col" class="text-center">Situação do Aparelho</th>  
-                                                <th scope="col" class="text-center">Núº da Linha</th>
+                                                <th scope="col" class="text-center">SituaÃ§Ã£o do Aparelho</th>  
+                                                <th scope="col" class="text-center">NÃºÂº da Linha</th>
                                                 <th scope="col" class="text-center">IMEI Chip</th>
                                                 <th scope="col" class="text-center">Qtd. Dados</th>
                                                 <th scope="col" class="text-center">Qtd. Minutos</th>  
                                                 <th scope="col" class="text-center">Compartilhado</th>  
-                                                <th scope="col" class="text-center">Situação da Linha</th>  
+                                                <th scope="col" class="text-center">SituaÃ§Ã£o da Linha</th>  
                                                 <th scope="col" class="text-center">Valor Mensal</th>  
-                                                <th scope="col" class="text-center">Endereço</th>  
+                                                <th scope="col" class="text-center">EndereÃ§o</th>  
                                                 <th scope="col" class="text-center">Cidade</th>  
                                                 <th scope="col" class="text-center">CEP</th>  
                                                 <th scope="col" class="text-center">Estado</th> 
                                                 <th scope="col" class="text-center">Termo</th>  
-                                                <th scope="col" class="text-center">Data de Criação</th>  
-                                                <th scope="col" class="text-center">Ações</th>  
+                                                <th scope="col" class="text-center">Data de CriaÃ§Ã£o</th>  
+                                                <th scope="col" class="text-center">AÃ§Ãµes</th>  
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -358,7 +358,7 @@ $resultado_tel = mysqli_query($conn, $result_tel);
                                             <li class="page-item"><a class="page-link" href="#">4</a></li>
                                             <li class="page-item"><a class="page-link" href="#">5</a></li>
                                             <li class="page-item">
-                                                <a class="page-link" href="#">Ãšltima</a>
+                                                <a class="page-link" href="#">ÃƒÂšltima</a>
                                             </li>
                                         </ul>
                                     </nav>-->
@@ -397,7 +397,7 @@ $resultado_tel = mysqli_query($conn, $result_tel);
                 <div class="modal-header bg-primary text-light">
                     <h5 class="modal-title" id="exampleModalLabel">DESCONECTAR</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">Ã—</span>
+                        <span aria-hidden="true">ÃƒÂ—</span>
                     </button>
                 </div>
                 <div class="modal-body">Tem certeza de que deseja sair do sistema?</div>
@@ -440,7 +440,9 @@ $resultado_tel = mysqli_query($conn, $result_tel);
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
 
-
+    <!-- Ajuste no datatables, foi comentado o trecho do cÃ³digo que representava a paginaÃ§Ã£o pra deixar a paginaÃ§Ã£o do datatables
+agir, e aqui abaixo estÃ¡ o cÃ³digo que faz o datatables funcionar, ainda serÃ¡ necessÃ¡rio ajustar o cÃ³digo do datatables pra
+poder traduzir as informaÃ§Ãµes e ajustar o design pelo css -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
     <link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet">
